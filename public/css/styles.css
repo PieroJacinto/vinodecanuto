@@ -1,0 +1,554 @@
+/* estilos para estandarizar en todos los navegadores */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', serif;    
+    min-height: 100vh;    
+}
+/* margen inferior de el main para que quede separado del footer */
+main {
+    margin-bottom: 3%;    
+}   
+a {
+    color: black !important;
+    text-decoration: none !important;
+}
+/* PADDING DERECHO E IZQUIERDO DEL HOME */
+.home-pad{
+    padding: 0px 3%;
+}
+
+
+/* HAMBURGUER */
+
+.menu-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;   
+}
+
+.menu-btn__burguer {
+    width: 50px;
+    height: 5px;
+    background: #FFA17B;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burguer::before,
+.menu-btn__burguer::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: #FFA17B;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn__burguer::before {
+    transform: translateY(-16px);
+}
+.menu-btn__burguer::after {
+    transform: translateY(16px);
+}
+
+/* HAMBURGUER ANIMACION */
+/* atrapamos la linea de el medio */
+.menu-btn.open .menu-btn__burguer {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+/* rotamos las lineas before y after*/
+.menu-btn.open .menu-btn__burguer::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burguer::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+/* eliminamos y agregamos estilos del dropdown de bootstrap para que funcione la animacion del hamburguer*/
+.btn-secondary {
+    --bs-btn-bg :none !important;
+    --bs-btn-hover-bg: none !important;
+    --bs-btn-active-bg: none !important;
+    --bs-btn-focus-shadow-rgb:none !important
+}
+.dropdown-toggle::after {
+    content:none !important
+}
+.hamb-pad{
+    padding-right: 50px;
+}
+.btn{
+    --bs-btn-padding-x:none !important;
+    --bs-btn-border-width:none !important
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+   
+    background-color: transparent; 
+}
+/* color de fondo y posicion del dropdown */
+.dropdown-menu{
+    background-color: #FFA17B !important;
+    transform: translate3d(-2px, 79px, 0px) !important;
+    --bs-dropdown-border-radius: none !important;
+    height: 100vh;
+    width: 50vw;
+}
+/* color de los items del dropdown */
+.dropdown-item{
+    color: white !important;
+    --bs-dropdown-link-hover-bg: #6B3454 !important;
+    --bs-dropdown-link-active-bg: #6B3454 !important;
+    text-align: center  ;
+    text-transform:uppercase;
+}
+.dropdown-menu a {
+    text-align: center;
+}
+/* linea divisora de dropdown items */
+.dropdown-menu hr {
+    border: solid .1rem aliceblue;
+    opacity: 1;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/* HEADER */
+
+/* LOGO DEL HEADER */
+.header-logo{
+    width: 3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    text-align: center;   
+}
+
+/* iconos del header */
+.header-icons{
+    color: #FFA17B;
+    font-size: 1.7rem;    
+}
+.icon-pad{
+    padding-right: 1rem;
+}
+/* NAVBAR */
+.navbar{
+    display: none !important;
+}
+.navbar>li>a:hover{
+    background-color: #FFA17B !important;
+    border-radius: 8px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    color: #6B3454 !important;
+}
+
+/* BANNER */
+
+.banner{
+    margin-top: 4%;    
+}
+
+
+/* SEPARADORES HOME */
+.separador{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    column-gap: 3%;
+}
+.separador b{
+    background-color: currentColor;
+    display: block;    
+    height: 2px;
+    opacity: .3;
+}
+
+.iconos-separador{
+    text-align: center;
+}
+.titulo-separador{
+        text-align: center;
+        margin-top: 3%;
+}
+/* CATEGORIAS HOME */
+.categorias-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;       
+}
+.cat-item{
+    width: 50%;
+    text-align: center;
+    position: relative; 
+    
+}
+.categorias-flex .cat-item{
+    padding: 3%;
+}
+.cat-item img{
+    aspect-ratio: 4/3;
+    width:100%;
+    object-fit: cover;
+    border-radius: 8px; 
+    box-shadow: 0 0.5rem 0.7rem rgba(0,0,0, .5);
+}
+.cat-item:hover img{
+    opacity: .6;
+    padding: 0%;
+}
+.cat-item:hover{
+    padding: 0% !important;
+    transition: 250ms ease-in;
+}
+.cat-item:hover a{
+    color: #FFA17B !important;
+    font-weight: bolder;        
+}
+    
+.cat-name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 88%;   
+    background-color: white;     
+}
+.cat-item:hover .cat-name{
+    background-color: #6B3454;
+    width:  100%;
+    transition: 250ms ease-in;
+    padding: 2% 0px;
+    text-transform: uppercase;          
+}
+.cat-name a{
+    font-size: 4vw;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;       
+}
+
+/* instagram feed */
+.overflow {
+    overflow: hidden;
+}
+#feed-contenedor {
+    background-color: rgb(189,189,189);
+    margin: 3rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-galery{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.chevron span{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    font-size: 2rem;
+    color: rgb(157,217,238);
+    width: 4.3rem;
+    height: 4.7rem;
+    background-color: rgba(23,23,23,0.9);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.chevron span:hover{
+    background-color: rgba(23,23,23,0.6);
+}
+
+.chevron #prev{
+    padding-right: .5rem;
+    justify-content: flex-end;
+    left: -1.7rem;
+}
+
+.chevron #next{
+    padding-right: .5rem;
+    justify-content: flex-start;
+    right: -1.7rem;
+}
+
+.galery{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.image{
+    min-width: 100%;  
+    position: relative;
+    aspect-ratio: 3/4;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.caption p{
+    color: white;
+    width: 80%;
+}
+
+.image:hover .opacity-hover {
+    width: 100%;
+}
+
+.caption {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(1000px);
+    transition: transform 100ms linear;
+}
+.opacity-hover:hover .caption{
+    transform: translateY(0px);
+}
+
+.opacity-hover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: background-color 300ms linear;
+}
+
+.opacity-hover:hover{
+    background-color: rgba(2,2,2,0.8);
+}
+
+.contenedor-galery {
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.prod-det {
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+
+.insta-button {
+    background: #F7E2D6;
+    border-radius: 5px;
+    padding: 0.7rem 3rem;
+    border: none;
+    
+}
+
+.hr-line {
+    border: solid .3rem #9DD6DF;
+    opacity: 1;
+}
+
+/*  logo instagram */
+.insta-icon {
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+/* BOTON INSTAGRAM */
+.insta-button {
+    background: #FFA17B;
+    border-radius: 5px;
+    padding: 0.7rem 3rem;
+    border: none;    
+}
+
+/* LISTA DE PRODUCTOS SEGUN CATEGORIA */
+
+.section-filter-prod {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 1rem;
+}
+
+/* GRID LISTA DE PRODUCTOS POR CATEGORIA */
+
+.tarjetas{   
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(225px, 1fr));
+    gap: 1rem;
+    border-radius: 5px;
+}
+.tarjeta{
+    border: 1px #dee2e6 solid;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+.tarjeta-imagen{
+    width: 100%;
+    display: block;
+}
+.contenido-tarjeta {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 5px;
+    text-align: center;
+}
+.contenido-tarjeta > p {
+    margin-bottom: 0;
+}
+.contenido-tarjeta > p:last-of-type {
+    font-weight: bold;
+}
+.boton-tarjeta{
+    padding: 5px;
+    font-size: 1em;
+    background: #FFA17B;    
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+/* FORMULARIO PRECIO Y CATEGORIAS EM LISTA DE PRODUCTOS */
+.categ-left-section{
+    padding: 5%;
+    border: 1px #dee2e6 solid;
+    border-radius: 5px;
+    margin-top: 1rem;     
+} 
+
+/* BOTON PARA ENVIAR FORMULARIO CON FILTROS */
+.boton-filtros {
+    background: #6B3454;
+    border-radius: 5px;
+    padding: 0.7rem 3rem;
+    color:white;
+    border: none
+}
+
+/* FILTRO DE PRECIO */
+.filtro-titulo{
+    margin-top: 1rem;
+    margin-bottom: 1rem;      
+}
+.filtro-subtitulo{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+.filter-icon{
+    width: 10%;    
+}
+
+.price-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 3px 0 35px;
+    padding: none;
+}
+.input-min{
+    margin-right: 1rem;
+}
+.price-input .field{
+    display: flex;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+}
+.field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 120%;   
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #999;
+    -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}
+.slider{
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+}
+.slider .progress{
+    height: 100%;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background: #FFA17B;
+}
+.range-input{
+    position: relative;
+}
+.range-input input{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #FFA17B;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+input[type="range"]::-moz-range-thumb{
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #FFA17B;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+/* OWL CAROUSEL DE PRODUCTOS RECOMENDADOS */
+.owl-carousel .owl-item img{
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 3/4;
+    padding: 5px;
+    height: auto;
+}
+.owl-carousel{
+    width: fit-content;
+}
+
+
+

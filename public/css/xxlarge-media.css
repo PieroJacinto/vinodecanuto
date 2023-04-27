@@ -1,0 +1,19 @@
+@media (min-width: 1400px) {
+   .home-pad{
+      padding: 0px 8%;
+   }
+   .categ-pad{
+      padding: 0px 10%;
+   }
+    /* HEADER */
+    .navbar > li > a  {      
+        font-size: .8vw;    
+   }
+   
+   .logo{        
+      padding-left: 8%;
+   }
+   .icon-pad{
+      padding-right: 8%;
+   } 
+}

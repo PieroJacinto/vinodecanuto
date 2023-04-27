@@ -1,0 +1,32 @@
+/* FLEX */
+
+.flex {
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+
+/* TEXT */
+.text-center{
+    text-align: center;
+}
+
+/* PADDING */
+.pad-right{
+    padding-right: 3%;
+}
+
+.pad-categ-card{
+    padding-right: 5%;
+}
+/* MARGIN */
+.mrg-t-1{
+    margin-top: 3%;
+}

@@ -1,0 +1,27 @@
+@media (min-width: 1200px) {
+   .home-pad{
+      padding: 0px 10%;
+   }
+  .categ-pad{
+   padding: 0px 8%;
+   }
+    /* HEADER */
+    .navbar > li > a  {      
+      font-size: 1.2vw;    
+   }
+   .navbar>li>a:hover{      
+      padding-bottom: 4%;      
+  }
+   .logo{        
+      padding-left: 10%;
+   }
+   .icon-pad{
+      padding-right: 10%;
+   }
+   /* LISTA DE PRODUCTOS SEGUN CATEGORIA */
+   .section-filter-prod {
+      grid-template-columns: 1fr 4fr;
+   }
+  
+}
+      

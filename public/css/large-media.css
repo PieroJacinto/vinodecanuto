@@ -1,0 +1,46 @@
+@media (min-width: 992px) { 
+   .home-pad{
+      padding: 0px 8%;
+   }
+  .categ-pad{
+   padding: 0px 6%;
+   }
+    /* HEADER */
+    .navbar > li > a  {      
+      font-size: 1vw;    
+   }   
+   .nav-li-pad{
+      padding-left: 2rem;
+   }
+   .logo{        
+      padding-left: 8%;
+   }
+   .icon-pad{
+      padding-right: 8%;
+   }
+   .navbar > li > a  {  
+     padding: 0px 1.5rem;   
+   }
+   /* padding cards categorias */
+   .categorias-flex .cat-item{
+   padding: 2%;
+   }
+   /* NOMBRE CATEGORIA */
+   .cat-name a{
+      font-size: 2vw;   
+   }
+    /* CATEGORIAS HOVER  */
+    .cat-name{
+      width: 88%;
+   }
+   /* instagram galery*/
+   .image{
+      min-width: 20%;  
+      position: relative;
+      aspect-ratio: 3/4;
+  }
+/* LISTA DE PRODUCTOS SEGUN CATEGORIA */
+.section-filter-prod {
+   grid-template-columns: 1fr 3fr;
+}
+ }

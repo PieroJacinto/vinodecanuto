@@ -1,0 +1,68 @@
+@media (min-width: 768px) {
+   .home-pad{
+      padding: 0px 6%;
+  }
+  .categ-pad{
+   padding: 0px 3%;
+   }
+      /* HEADER */
+   .hamb-disp{
+      display: none;
+   }
+   .logo{
+      order: -1;
+      padding-left: 6%;
+   }
+   .icon-pad{
+      padding-right: 6%;
+   }
+   /* SACAMOS EL DROPDOWN */
+   .display-drop-none{
+      display: none !important;
+   }
+   
+   /* mostramos el navbar */
+   .navbar{
+      display: flex !important;
+      flex-direction: row;
+      margin: 0px !important;
+   }
+   .navbar > li > a  {    
+      text-decoration:none !important;
+      color: white !important;    
+      font-size: 1.5vw; 
+      text-align: center;
+      padding: 0px 0.75rem;   
+   }
+   .navbar > li {
+      list-style: none !important;    
+   }
+     
+   /* CATEGORIAS HOME */
+   .cat-item{
+   width: 33.3%;
+   }
+   /* SEPARADORES */
+   .titulo-separador{   
+   margin-top: 3rem;
+   }
+   /* CATEGORIAS */
+   /* NOMBRE CATEGORIA */
+   .cat-name a{
+      font-size: 2.5vw;   
+   }
+   .cat-name{
+      width: 83%;
+   }
+    /* Intagram gallery */
+    .image{
+      min-width: 33.3%;  
+      position: relative;
+      aspect-ratio: 3/4;
+   }
+  
+   /* GRID LISTA DE PRODUCTOS POR CATEGORIA */
+   .tarjetas{
+      margin-top: 1rem;
+   }
+}
