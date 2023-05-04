@@ -427,6 +427,16 @@ a {
     border: none;
     color: white;    
 }
+/* ERROR INSTAGRAM */
+.insta-error{
+    text-align: center;
+      
+}
+.insta-error >h2 {
+    color: red;
+    margin-top: 4rem;
+    margin-bottom: 4rem;   
+}
 
 /* LISTA DE PRODUCTOS SEGUN CATEGORIA */
 
