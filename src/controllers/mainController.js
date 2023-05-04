@@ -31,6 +31,12 @@ module.exports = {
   },
   detalleProducto: async (req,res) => {
     res.render("detalle-producto")
+  },
+  login: async (req,res) => {
+    res.render("login")
+  },
+  register: async (req,res) => {
+    res.render("register")
   }
 }
   

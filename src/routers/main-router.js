@@ -18,5 +18,7 @@ router.get("/", mainController.home);
 // LISTA DE PRODUCTOS SEGUN CATEGORIA
 router.get("/listaProductos", mainController.listaProductos);
 router.get("/detalleProducto", mainController.detalleProducto);
+router.get("/login", mainController.login);
+router.get("/register", mainController.register);
 
 
