@@ -181,11 +181,19 @@ a {
 /* BANNER */
 
 .banner{
-    margin-top: 4%;   
+    margin-top: 2%;   
+}
+.banner-pad {
+    margin: 0px !important;
 }
 .carousel-inner, img{
-    max-height: 600px !important; 
+    max-height: 700px !important; 
     object-fit: cover; 
+}
+.viñedo{
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
 }
 
 .carousel-caption {  
@@ -206,6 +214,9 @@ a {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     align-items: center;    
+}
+.separador-pad {
+    padding: 0px 15px;
 }
 .separador b{
     background-color: currentColor;

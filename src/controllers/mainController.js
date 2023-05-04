@@ -8,19 +8,19 @@ const url = `https://graph.instagram.com/me/media?fields=thumbnail_url,media_url
 // ADENTRO DEL MODULE.EXPORTS CREAMOS TODOS LOS CONTROLADORES QUE CONTROLARAN CADA RUTA
 module.exports = {
   home: async (req, res) => {
-    //let instaData;
+    let instaData;
     //TRY CATCH PARA MOSTRAR ERROR SI LOS HAY EN EL FETCH DE INSTAGRAM API
-    //try {
+    try {
       // HACEMOS LA PETICION A LA API
-    //   const instaFetch = await fetch(url);
-    //   const instaJson = await instaFetch.json();
-    //   instaData = instaJson.data;
-    // } catch (error) {
-    //    console.log("Error en el servicio de Instagram: " + error);
-    //    //si instadata es null se renderiza la vista "instagram-fetch-error" como lo establece el if ternario en el ejs del home
-    //   instaData = null;
-    // }
-    const instaData = null
+      const instaFetch = await fetch(url);
+      const instaJson = await instaFetch.json();
+      instaData = instaJson.data;
+    } catch (error) {
+      console.log("Error en el servicio de Instagram: " + error);
+        //si instadata es null se renderiza la vista "instagram-fetch-error" como lo establece el if ternario en el ejs del home
+      instaData = null;
+    }
+    
     // console.log(JSON.stringify(instaData,null,4));
 
     // RENDERIZAMOS LA VISTA HOME Y LE PASAMOS OBJETO CON LA INFO NECESARIA
