@@ -5,13 +5,8 @@
   .categ-pad{
    padding: 0px 6%;
    }
-    /* HEADER */
-    .navbar > li > a  {      
-      font-size: 1vw;    
-   }   
-   .nav-li-pad{
-      padding-left: 2rem;
-   }
+    /* HEADER */    
+  
    .logo{        
       padding-left: 8%;
    }
@@ -19,15 +14,47 @@
       padding-right: 8%;
    }
    .navbar > li > a  {  
-     padding: 0px 1.5rem;   
+     padding: 0px 1rem;   
+   }
+     /* BANNER */
+     .carousel-caption {        
+      font-size: 160% !important;
+      
+   }
+  .carousel-caption > h5 {
+      font-size:160% !important;
+  }
+   /* TAMAÑO DE ICONOS SEPARADORES */
+   .botella-lateral{
+      width: 20%;
+   }
+   .botella-medio{
+      width: 30%;
+   }
+   .corchos{
+      width: 20%;
+      transform: scaleY(-1);
+   }
+   .saca-corchos{
+      width: 30%;
+      transform: scaleY(-1);
+   }
+   .copas-lateral {
+      width: 20%;
+   }
+   .copas-medio {
+      width: 30%;
+   }
+   .damajuana{
+      width: 16%;
    }
    /* padding cards categorias */
    .categorias-flex .cat-item{
    padding: 2%;
    }
    /* NOMBRE CATEGORIA */
-   .cat-name a{
-      font-size: 2vw;   
+   .cat-name {
+      font-size: 1.5vw !important;   
    }
     /* CATEGORIAS HOVER  */
     .cat-name{

@@ -35,15 +35,19 @@
                     </div>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="images/banner/canuto banner 1.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <img src="images/banner/1045x526 banner 1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-flex align-items-center flex-column justify-content-center">
                             <h5>Envios</h5>
                             <p>Hacé tu pedido y recibilo en cualquier lugar del país</p>
                           </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="images/banner/canuto banner 2.png" class="d-block w-100" alt="...">
-                      </div>                      
+                        <img src="/images/banner/canuto banner 2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption  d-md-flex align-items-center flex-column justify-content-center">
+                            <h5>Participá</h5>
+                            <p>De nuestras exclusivas CATAS</p>
+                          </div>
+                      </div>                                         
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselCanuto" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -58,128 +62,51 @@
         </section>           
         <!-- CATEGORIAS -->
         <section class="home-pad">
-            <div">
-                <!-- SEPARADOR -->
-            <h4 class="titulo-separador">Categorias</h4>
-            <div class="separador">                
-                <b></b>           
-                <div class="iconos-separador">
-                    <img src="images/svg/botella 3.svg"style="max-width: 18%;">
-                    <img src="images/svg/copa1.svg" style="max-width: 32%;">
-                    <img src="images/svg/damajuana.svg"style="max-width:15%;">
-                </div>                 
-                <b></b>                        
-            </div>            
+            <!-- SEPARADOR -->
+                <h4 class="titulo-separador">Categorias</h4>
+                <div class="separador">                
+                    <b></b>           
+                    <div class="iconos-separador">
+                        <img src="images/svg/botella 3.svg" class="botella-lateral">
+                        <img src="images/svg/copa1.svg" class="copas-medio">
+                        <img src="images/svg/damajuana.svg" class="damajuana">
+                    </div>                 
+                    <b></b>                        
+                </div>            
             
             <!-- CARDS CATEGORIAS -->
             <%- include('./partials/cards-categorias') %>
         </section>
         <!-- RECOMENDADOS DE LA CASA -->
         <section class="home-pad">
-                <!-- SEPARADOR -->
-            <h4 class="titulo-separador ">Recomendados de la casa</h4>
+                <!-- SEPARADOR -->               
+                <h4 class="titulo-separador ">Recomendados de la casa</h4>
+                <div class="separador ">                
+                    <b></b>           
+                    <div class="iconos-separador">
+                        <img src="images/svg/copa1.svg" class="copas-lateral">
+                        <img src="images/svg/copa23.svg" class="copas-medio">
+                        <img src="images/svg/copa1.svg" class="copas-lateral">
+                    </div>                 
+                    <b></b>                        
+                </div> 
+            <!-- CARDS RECOMENDADOS -->
+            <%- include('./partials/cards-recomendados') %>           
+        </section>
+        <!-- ULTIMOS INGRESOS -->
+        <section class="home-pad">
+            <h4 class="titulo-separador ">Ultimos ingresos</h4>
             <div class="separador ">                
                 <b></b>           
                 <div class="iconos-separador">
-                    <img src="images/svg/copa1.svg"style="max-width: 25%;">
-                    <img src="images/svg/copa23.svg" style="max-width: 32%;">
-                    <img src="images/svg/copa1.svg"style="max-width:25%;">
+                    <img src="../../public/images/svg/corcho canuto.svg" class=" corchos">
+                    <img src="../../public/images/svg/saca corcho canuto.svg" class="saca-corchos">
+                    <img src="../../public/images/svg/corcho canuto.svg" class=" corchos" >
                 </div>                 
                 <b></b>                        
             </div>
-            <!-- CARDS RECOMENDADOS -->
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">                         
-                            <div class="tarjeta">
-                                <a href="">
-                                    <img src="images/vinos/tatu2.png" alt="" srcset="" class="tarjeta-imagen">
-                                    <div class="contenido-tarjeta">
-                                        <p>Tatu Malbec</p>
-                                        <p>$2000</p>
-                                    </div>
-                                    <div class="boton-tarjeta">Agregar</div>
-                                </a>
-                            </div>                           
-                        </div>
-                        <div class="item">                            
-                            <div class="tarjeta">
-                                <a href="">
-                                    <img src="images/vinos/mara pinot.png" alt="" srcset="" class="tarjeta-imagen">
-                                    <div class="contenido-tarjeta">
-                                        <p>Mara Pinot Noir</p>
-                                        <p>$3000</p>
-                                    </div>
-                                    <div class="boton-tarjeta">Agregar</div>
-                                </a>
-                            </div>                             
-                        </div>
-                        <div class="item">                            
-                            <div class="tarjeta">
-                                <a href="">
-                                    <img src="images/vinos/nicasia blanc de blanc.png" alt="" srcset="" class="tarjeta-imagen">
-                                    <div class="contenido-tarjeta">
-                                        <p>Nicasia Blanc de Blanc</p>
-                                        <p>$2500</p>
-                                    </div>
-                                    <div class="boton-tarjeta">Agregar</div>
-                                </a>
-                            </div>                             
-                        </div>
-                        <div class="item">                            
-                            <div class="tarjeta">
-                                <a href="">
-                                    <img src="images/vinos/tikal amorio.png" alt="" srcset="" class="tarjeta-imagen">
-                                    <div class="contenido-tarjeta">
-                                        <p>Tikal Amorio</p>
-                                        <p>$4000</p>
-                                    </div>
-                                    <div class="boton-tarjeta">Agregar</div>
-                                </a>
-                            </div>                             
-                        </div>             
-                        <div class="item">                            
-                            <div class="tarjeta">
-                                <a href="">
-                                    <img src="images/vinos/tikal jubilo2.png" alt="" srcset="" class="tarjeta-imagen">
-                                    <div class="contenido-tarjeta">
-                                        <p>Tikal Júbilo</p>
-                                        <p>$4500</p>
-                                    </div>
-                                    <div class="boton-tarjeta">Agregar</div>
-                                </a>
-                            </div>                             
-                        </div>             
-                        <div class="item">                            
-                            <div class="tarjeta">
-                                <a href="">
-                                    <img src="images/vinos/padrillos pinot.png" alt="" srcset="" class="tarjeta-imagen">
-                                    <div class="contenido-tarjeta">
-                                        <p>Padrillos Pinot Noir</p>
-                                        <p>$3000</p>
-                                    </div>
-                                    <div class="boton-tarjeta">Agregar</div>
-                                </a>
-                            </div>                             
-                        </div>  
-                        <div class="item">                            
-                            <div class="tarjeta">
-                                <a href="">
-                                    <img src="images/vinos/STELLA_CRINITA_FRANC.png" alt="" srcset="" class="tarjeta-imagen">
-                                    <div class="contenido-tarjeta">
-                                        <p>Stella Crinita Cabernet Franc</p>
-                                        <p>$6000</p>
-                                    </div>
-                                    <div class="boton-tarjeta">Agregar</div>
-                                </a>
-                            </div>                             
-                        </div>                                                                     
-                    </div>
-                </div>
-            </div>           
-            
+            <!-- CARDS ULTIMOS INGRESOS -->
+            <%- include('./partials/ultimos-ingresos') %>
         </section>
 
         <!-- INSTAGRAM Fetch -->
@@ -189,9 +116,9 @@
             <div class="separador home-pad">                
                 <b></b>           
                 <div class="iconos-separador">
-                    <img src="images/svg/botella1.svg"style="max-width: 20%;">
-                    <img src="images/svg/botella 3.svg" style="max-width: 25%;">
-                    <img src="images/svg/botella2.svg"style="max-width:20%;">
+                    <img src="images/svg/botella1.svg" class="botella-lateral">
+                    <img src="images/svg/botella 3.svg" class="botella-medio">
+                    <img src="images/svg/botella2.svg" class="botella-lateral">
                 </div>                 
                 <b></b>                        
             </div>
@@ -222,8 +149,8 @@
 
     </main> 
     <!-- FOOTER -->
-    <footer>
-        
+    <footer class="footer-contenedor">
+        <%- include('./partials/footer') %> 
     </footer>   
        
    <!-- HAMBURGUER JS SCRIPT  -->

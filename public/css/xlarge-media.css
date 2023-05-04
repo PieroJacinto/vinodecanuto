@@ -9,6 +9,9 @@
     .navbar > li > a  {      
       font-size: 1.2vw;    
    }
+   .nav-li-pad {
+      margin-left: 1rem;
+  }
    .navbar>li>a:hover{      
       padding-bottom: 4%;      
   }
@@ -18,6 +21,28 @@
    .icon-pad{
       padding-right: 10%;
    }
+   /* TAMAÑO DE ICONOS SEPARADORES */
+.botella-lateral{
+   width: 14% ;
+}
+.botella-medio{
+   width: 18%;
+}
+.corchos{
+   width: 8%;
+}
+.saca-corchos{
+   width: 22%;
+}
+.copas-lateral {
+   width: 16%;
+}
+.copas-medio {
+   width: 22%;
+}
+.damajuana{
+   width: 12%;
+}
    /* LISTA DE PRODUCTOS SEGUN CATEGORIA */
    .section-filter-prod {
       grid-template-columns: 1fr 4fr;
