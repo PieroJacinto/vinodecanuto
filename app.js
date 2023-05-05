@@ -5,8 +5,8 @@ require("dotenv").config();
 const express = require("express");
 
 // REQUERIMOS MIDDLEWARES PARA CONFIGURAR APP Y LEVANTAR EL SERVIDOR
-const createApp = require("./config/create-app");
-const appConfig = require("./config/app-config");
+const createApp = require("./src/config/create-app");
+const appConfig = require("./src/config/app-config");
 
 // REQUERIMOS PATH Y STATIC PARA LAS RUTAS
 const { join } = require("path");
@@ -30,7 +30,7 @@ app.use(express.json());
 app.use(methodOverride("_method"));
 
 //REQUERIMOS EL ROUTEADOR PRINCIPAL
-const mainRouter = require("./routers/main-router");
+const mainRouter = require("./src/routers/main-router");
 
 // MONTAMOS MAIN ROUTER
 app.use(mainRouter);
