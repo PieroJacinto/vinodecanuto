@@ -177,6 +177,14 @@ a {
 .footer-contenedor, a{
     color: black !important;
     font-size: 12px;
+    transition: all .3s ease-in;
+}
+.footer-contenedor, a div:hover {
+    color: white;
+    font-weight: 900;
+}
+.footer-contenedor, a img:hover {
+    color: white;    
 }
 .footer-contenedor img{
     width: 1.5rem;
@@ -849,8 +857,6 @@ ul {
     border-bottom-right-radius: 7px;    
     margin: 0 1rem;
 }
-/* escondemos el sign up */
-
 .login-sign-form  input:not(#terms,#remember){
    width: 100%; 
    outline: 0;   
@@ -895,13 +901,14 @@ ul {
 }
 .login-sign-form .forgot {
     float: right;
-    font-size: 12px;
+    font-size: 12px;    
 }
 .login-sign-form label a, .afterform a {
     color: blue !important;
 }
 .login-sign-form :is(p,label) a:hover, .afterform a:hover {
     border-bottom: 1px solid;
+    color: blue !important;
 }
 .social :is(ul, p) {
     display: flex;
