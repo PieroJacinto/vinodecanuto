@@ -20,7 +20,7 @@ const app = createApp();
 appConfig.config(app);
 
 // USAMOS STATIC Y JOIN PARA QUE TODO LO QUE AGREGEMOS AL HTML SE REDIRIJA A PUBLIC AUTOMATICAMENTE, Y ASI ACORTAR LAS RUTAS
-app.use(static(join(__dirname, "..", "public")));
+app.use(static(join(__dirname, "./public")));
 
 // configuramos express para recibir y parsear peticiones HTTP
 app.use(express.urlencoded({ extended: false }));
