@@ -19,6 +19,7 @@ router.get("/", mainController.home);
 router.get("/listaProductos", mainController.listaProductos);
 router.get("/detalleProducto", mainController.detalleProducto);
 router.get("/login", mainController.login);
+router.post("/login", mainController.loginProcess);
 router.get("/register", mainController.register);
 
 

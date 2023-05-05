@@ -35,6 +35,9 @@ module.exports = {
   login: async (req,res) => {
     res.render("login")
   },
+  loginProcess: async (req,res) => {
+
+  },
   register: async (req,res) => {
     res.render("register")
   }

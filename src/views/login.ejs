@@ -19,22 +19,23 @@
                                 <div class="welcome">
                                      <a href="">
                                         Vino de Canuto
-                                    </a>
-                                    
+                                    </a>                                    
                                 </div>
                             </div>
 
                         </div>
                         <div class="content-form">
                             <div class="y-style">
-                                <form class="login-sign-form" action="">
+                                <form action="/login" method="POST" class="login-sign-form" id="formulario" novalidate>
                                     <p>
                                         <label>Email</label>
-                                        <input type="email" placeholder="Ingresá tu email">                                        
+                                        <input type="email" name="email" placeholder="Ingresá tu email">
+                                        <span class="error"></span>                                        
                                     </p>
                                     <p>
                                         <label>Contraseña</label>
-                                        <input type="password" placeholder="Ingresá tu contraseña">                                        
+                                        <input type="password" name="password" placeholder="Ingresá tu contraseña">    
+                                        <span class="error"></span>                                    
                                     </p>
                                     <p class="check">
                                         <input type="checkbox" id="remember">                                        
@@ -61,6 +62,8 @@
     </footer>  
     <!-- HAMBURGUER JS SCRIPT  -->
     <script src="js/hamburguer.js"></script>
+    <!-- VALIDATIONS SCRIPT -->
+    <script src="js/validaciones/login.js"></script>
     <!-- BOOTSTRAP ENDING LINE -->
     <script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 

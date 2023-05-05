@@ -176,9 +176,14 @@ a {
 }
 .footer-contenedor, a{
     color: black !important;
+    font-size: 12px;
 }
 .footer-contenedor img{
     width: 1.5rem;
+}
+.footer-about,
+.footer-contacto {
+   margin-bottom: 1rem;
 }
 /* BANNER */
 
@@ -848,8 +853,7 @@ ul {
 
 .login-sign-form  input:not(#terms,#remember){
    width: 100%; 
-   outline: 0;
-   margin: 0 0 20px;
+   outline: 0;   
    padding: 10px 15px;
    border-radius: 7px;
    border: solid 1px black;
@@ -944,4 +948,30 @@ ul {
 }
 .social .twitter {
     color: #1da1f2 !important;
+}
+
+/*-------- FRONTEND VALIDATIONS-----------*/
+
+.is-valid input {
+  border-color: #198754 !important;
+}
+
+.is-notvalid input {
+  border-color: #842029 !important;
+}
+
+.error {
+  display: none;
+}
+
+.is-notvalid .error {
+  display: block;
+  color: #842029;
+}
+
+.alert-warning {
+  color: #842029;
+  background-color: #f8d7da;
+  text-align: center;
+  border-radius: 10px;
 }
